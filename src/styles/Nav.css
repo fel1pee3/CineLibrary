@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --font-logo: "Bungee", sans-serif;
+    --font-normal: "Afacad", sans-serif;
+
+    --cor1: #F20505;
+    --cor2: #400601;
+    --cor3: #730C02;
+    --cor4: #BF1304;
+    --black: #000;
+    --white: #fff;
+}
+
+.containerNav{
+    width: 100%;
+    height: 10vh;
+    background-color: var(--cor4);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.link{
+    color: var(--white);
+    font-size: 1.4em;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: .2s ease-out;
+}
+.logo{
+    font-size: 2.2em;
+}
+.caixaNav{
+    display: flex;
+    gap: 15px;
+}
+.caixaNav .link:hover{
+    color: var(--black);
+    background-color: var(--white);
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width:720px) {
+    .link{
+        color: var(--white);
+        font-size: 1em;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 20px;
+        transition: .2s ease-out;
+    }
+    .logo{
+        font-size: 1.8em;
+    }
+    .caixaNav{
+        gap: 0px;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .search p{
+        display: none;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .link{
+        font-size: .9em;
+    }
+    .logo{
+        font-size: 1.4em;
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .search p{
+        display: none;
+    }
+}

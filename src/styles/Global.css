@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --font-logo: "Bungee", sans-serif;
+    --font-normal: "Afacad", sans-serif;
+
+    --cor1: #F20505;
+    --cor2: #400601;
+    --cor3: #730C02;
+    --cor4: #BF1304;
+    --black: #000000;
+    --white: #fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-normal);
+}
+
+html{
+    background-color: var(--black);
+}
+
+.containerConteudo{
+    padding: 20px;
+}

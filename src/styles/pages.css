@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --font-logo: "Bungee", sans-serif;
+    --font-normal: "Afacad", sans-serif;
+
+    --cor1: #F20505;
+    --cor2: #400601;
+    --cor3: #730C02;
+    --cor4: #BF1304;
+    --black: #000;
+    --white: #fff;
+}
+
+.containerResults{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    transition: .5 all;
+}
+.caixaResult{
+    margin-bottom: 20px;
+    transition: .3s;
+}
+.imgFilm{
+    width: 220px;
+    border-radius: 10px;
+}
+
+.searchTxt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.searchTxt input{
+    outline: 0;
+    border: none;
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+@media screen and (max-width:720px) {
+    .imgFilm{
+        width: 140px;
+        border-radius: 10px;
+    }
+    .searchTxt input{
+        font-size: .8em;
+        padding: 8px 15px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .imgFilm{
+        width: 95px;
+        border-radius: 10px;
+    }
+}
+
+
+

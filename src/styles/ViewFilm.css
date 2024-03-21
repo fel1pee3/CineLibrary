@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+
+:root{
+    --font-logo: "Bungee", sans-serif;
+    --font-normal: "Afacad", sans-serif;
+
+    --cor1: #F20505;
+    --cor2: #400601;
+    --cor3: #730C02;
+    --cor4: #BF1304;
+    --black: #000;
+    --white: #fff;
+}
+.containerInfos{
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.containerViewFilm{
+    width: 100%;
+}
+.containerInfos{
+    display: flex;
+}
+.imgPoster{
+    width: 320px;
+    margin-right: 30px;
+}
+.caixaInfos{
+    display: flex;
+    flex-direction: column;
+}
+.caixaInfos h1{
+    font-size: 3em;
+}
+.linguagem{
+    font-size: 2em;
+}
+.caixaInfosBasic{
+    display: flex;
+    gap: 15px;
+    font-size: 1.2em;
+}
+.listGens{
+    display: flex;
+    list-style: none;
+    gap: 5px;
+}
+.caixaInfoVots{
+    font-size: 1.4em;
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+.caixaSinopse{
+    margin: 20px 0;
+}
+.caixaSinopse h3{
+    font-size: 1.4em;
+}
+.caixaSinopse h2{
+    font-size: 1.4em;
+    font-weight: 500;
+    color: #ffffffdc;
+}
+.caixaSinopse p{
+    font-size: 1.2em;
+}
+.btn {
+    width: max-content;
+    color: var(--cor4);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid var(--cor4);
+    padding: 10px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  .btn:hover {
+    color: white;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: var(--cor4);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+
+@media screen and (max-width:780px) {
+
+    .imgPoster{
+        width: 280px;
+    }
+    .caixaInfos h1{
+        font-size: 2.4em;
+    }
+    .linguagem{
+        font-size: 1.6em;
+    }
+    .caixaInfosBasic{
+        display: flex;
+        gap: 15px;
+        font-size: 1em;
+    }
+    .caixaInfoVots{
+        font-size: 1.2em;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .caixaSinopse h3{
+        font-size: 1.2em;
+    }
+    .caixaSinopse h2{
+        font-size: 1.2em;
+        font-weight: 500;
+        color: #ffffffdc;
+    }
+    .caixaSinopse p{
+        font-size: 1em;
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 15px;
+      }
+}
+
+@media screen and (max-width:480px) {
+    .containerInfos{
+        display: flex;
+        flex-direction: column;
+    }
+    .imgPoster{
+        width: 220px;
+        margin-bottom: 30px;
+    }
+    .caixaInfos h1{
+        font-size: 2em;
+    }
+    .caixaInfosBasic{
+        font-size: .8em;
+    }
+    .caixaInfoVots{
+        font-size: 1.1em;
+    }
+    .caixaSinopse h3{
+        font-size: 1em;
+    }
+    .caixaSinopse h2{
+        font-size: 1em;
+        font-weight: 500;
+        color: #ffffffdc;
+    }
+    .caixaSinopse p{
+        font-size: .8em;
+    }
+    .btn {
+        width: max-content;
+        color: var(--cor4);
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 2px solid var(--cor4);
+        padding: 4px 12px;
+        font-size: 15px;
+        font-weight: bold;
+        background: transparent;
+        position: relative;
+        transition: all 1s;
+        overflow: hidden;
+      }
+}
+
